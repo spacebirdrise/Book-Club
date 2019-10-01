@@ -1,0 +1,300 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+	font-family: 'gilroy-extrabold';
+	src: url('../fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
+		 url('../fonts/gilroy-extrabold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+  }
+  @font-face {
+	font-family: 'gilroy-light';
+	src: url('../fonts/gilroy-light-webfont.woff2') format('woff2'),
+		 url('../fonts/gilroy-light-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+html{
+	height:100%;
+	margin:0;
+	min-height:100%;
+	font-family: 'gilroy-light', cursive;
+}
+
+body{
+	background-color:white ;
+	height:100%;
+	margin:0%;
+	min-height:100%;
+}
+
+/*CSS for page header*/
+#topInfoContainer{/*Holder for everything in the top info bar*/
+	height:10vh;
+	background-color: #7825BE;
+	max-width:100%;
+	font-weight: 700;
+	vertical-align: top;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.infoBarElement{
+	display: inline-block;
+	vertical-align: top;
+	width: 32%;
+	margin-top: 3vh;
+}
+.infoBarElement h1{
+	color: white;
+	font-size: 4vh;
+	vertical-align: middle;
+	margin: 0;
+}
+#logo {
+	display: inline-block;
+	height: 8vh;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+}
+#caption {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 3vh;
+}
+#nextUpBrand img {
+	height: 8vh;
+	width: auto;
+}
+#nextUpBrand h1 {
+	vertical-align: middle;
+}
+
+
+/*The following 'panel' styling is styling pertaining to 2 main panels on this page*/
+.mainPanel{
+	height:89vh;
+	margin:0;
+	display: inline-block;
+}
+
+#leftPanel{
+	width: 10%;
+	margin: 0;
+	vertical-align: top;
+	text-align: left;
+}
+
+.centerPanel{
+	width:89%;
+	margin: 0;
+	padding-top:0;
+	vertical-align:top;
+}
+
+
+/*Class for all everything on the left panel; two sets of navigable lists*/
+.leftPanelStuff{
+    text-align: left;
+}
+
+.leftPanelStuff ul {
+    padding: 0;
+		margin-top:0;
+}
+
+.leftPanelStuff p{
+	font-size: 20px;
+	color: black;
+	font-weight:  700;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-bottom: 25px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-left: 10px;
+}
+
+.leftPanelStuff a{
+	color:inherit;
+	text-decoration:inherit;
+}
+
+
+.leftPanelStuff p:hover{
+	margin-left: 0px;
+	border-left: 10px solid #7825BE;
+	color: #7825BE;
+	transition: color, border-left, margin-left .4s;
+	cursor: pointer;
+}
+
+.centerPanel input{ /*edits for the search bar at top left*/
+	margin-top: 3vh;
+	margin-bottom: 3vh;
+	margin-right: 2%;
+	margin-left: 5vw;
+	width: 30%;
+	max-width: 30%;
+	font-size: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius:20px;
+	border: 3px grey solid;
+}
+
+.centerPanel input:focus{
+	border: 3px #7825BE solid;
+	color: #7825BE;
+	outline: none;
+}
+
+/*Styling for the main, central panel that includes more or less a list of parties*/
+.centerPanel ul{
+	padding-top:0;
+	margin: 0;
+	overflow: hidden;
+	overflow-y: scroll;
+	height: 80vh;
+	list-style:none;
+	text-align:center;
+	padding-left:5px;
+}
+
+.centerPanel ul li{
+	margin-top:1vh;
+	margin-bottom:1vh;
+	color: grey;
+	background-color: white;
+	-webkit-box-shadow: 4px 6px 13px 0px rgba(173,173,173,0.4);
+	-moz-box-shadow: 4px 6px 13px 0px rgba(173,173,173,0.4);
+	box-shadow: 4px 6px 13px 0px rgba(173,173,173,0.4);
+	font-size: 20px;
+	width: 90%;
+	border-top: solid 5px grey;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.centerPanel ul li:hover{
+	color: black;
+	border-top: solid 5px #7825BE;
+ 	-webkit-box-shadow: 4px 6px 13px 0px rgba(173,173,173,1);
+	-moz-box-shadow: 4px 6px 13px 0px rgba(173,173,173,1);
+	box-shadow: 4px 6px 13px 0px rgba(173,173,173,1);
+	transition: color,border-top, box-shadow .2s
+
+}
+
+.centerPanel ul li p{
+	display:inline-block;
+	padding-bottom:1vh;
+	padding-top:1vh;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+
+.queue li div{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	display: inline-block;
+	white-space: nowrap;
+	vertical-align: middle;
+	font-weight: 600;
+}
+
+.title {
+	width: 60%;
+}
+
+.info {
+	width: 20%;
+}
+
+.queue img {
+	height: 8vh;
+	width: auto;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+}
+
+button {
+	font-weight: 700;
+	font-size: 20px;
+	color: white;
+	background-color: #7825BE;
+	border: 0px;
+	border-radius: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+
+/*Styling for input on form general across site*/
+.centeredInput{
+	display:inline-block;
+	height:35px;
+	width:250px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.fullWidthList{
+	text-align:center;
+	list-style-type:none;
+	padding-left:0px;
+}
+
+.fullWidthList li{
+	display:inline-block;
+	text-align:center;
+	width:50%;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.fullWidthList li:hover{
+	box-shadow: 0px 5px 10px #888888;
+}
+
+.popUpHolder{
+	width:89%;
+	display:inline-block;
+}
+
+
+/*Styling for time keeper in bottom left hand corner of main.html*/
+.leftPanelStuff_topBox h6{
+	margin-bottom:0.5px;
+	margin-top:1px;
+}
+
+.leftPanelStuff_topBox p{
+	margin-top:0.5px;
+	margin-bottom:0.5px;
+	margin-left:0.5px;
+}
+
+.leftPanelStuff_topBox{
+	text-align:center;
+	border:0.1px solid #7825BE;
+	border-top:0px solid #7825BE;
+	border-left:0px solid #7825BE;
+}
+
+.leftPanelStuff_topBox p:hover{
+	margin-left: 0px;
+	border-left: 0px;
+	color: black;
+	transition: color, border-left, margin-left .4s;
+	cursor:default;
+}

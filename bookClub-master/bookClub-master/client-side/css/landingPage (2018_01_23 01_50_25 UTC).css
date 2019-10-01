@@ -1,0 +1,24 @@
+.partyNameCol{
+	width:30vw;
+	text-align:left;
+	padding-left:0.3em;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.hostCol{
+	width:10vw;
+	text-align:center;
+}
+
+.popCol{
+	width:10vw;
+	text-align:center;
+}
+
+.distanceCol{
+	width:10vw;
+	text-align:center;
+	font-size: 23px;
+	font-weight: 500;
+}

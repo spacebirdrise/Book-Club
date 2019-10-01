@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<title>Book Club</title>
+	 <meta charset="UTF-8">
+	 <link rel="stylesheet" href="../css/core.css" />
+   <link rel="stylesheet" href="../css/fullPageFormStyling.css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="topInfoContainer">
+		<div class="infoBarElement" id="nextUpBrand" style="margin: 0; text-align:left">
+			<div id="logo">
+        <!--img tag with fake 'logo' could go here in the future-->
+			</div>
+			<div id="caption">
+				<h1>Book Club</h1>
+			</div>
+		</div>
+		<div class="infoBarElement" style="text-align: center;">
+			<h1>Welcome to Book Club!</h1>
+		</div>
+		<div class="infoBarElement" style="text-align: right;">
+			<h1 id="userName"></h1>
+		</div>
+	</div>
+
+  <div id="formHolder">
+      <form style="height:400px;">
+          <div id="formContent">
+              <p>Create Book Club Account</p>
+              <input name="username" class="centeredInput" type="text" placeholder="username"></input>
+              <input name="confirmUsername" class="centeredInput" type="text" placeholder="Confirm username"></input>
+              <input name="password" class="centeredInput" type="text" placeholder="password"></input>
+              <input name="confirmPassword" class="centeredInput" type="text" placeholder="Confirm Password"></input></br>
+              <button id="createAccount" class="loginBtn loginBtn--facebook" type="button">
+                  Register Account
+              </button>
+          </div>
+      </form>
+  </div>
+</body>

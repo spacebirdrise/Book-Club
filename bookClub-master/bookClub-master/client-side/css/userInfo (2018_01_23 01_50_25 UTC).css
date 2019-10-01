@@ -1,0 +1,20 @@
+#bigUserPic{
+  width:200px;
+  height:200px;
+  border-radius:50%;
+}
+
+.flexHolder{
+  display:flex;
+  flex-direction:column;
+  height:100%;
+}
+
+.fullWidthDiv{
+  text-align:center;
+	width:100%;
+}
+
+.mainContentHolder{
+  flex:1 1 100px;
+}

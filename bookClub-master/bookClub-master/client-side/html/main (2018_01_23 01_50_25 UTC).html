@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<title>Book Club</title>
+	 <meta charset="UTF-8">
+	 <link rel="stylesheet" href="../css/core.css" />
+	 <link rel="stylesheet" href="../css/main.css"/>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script><!--Books viewer api-->
+	 <script src="../javascript/main.js"></script>
+</head>
+
+<body>
+  <div id="topInfoContainer">
+		<div class="infoBarElement" id="nextUpBrand" style="margin: 0; text-align:left">
+			<div id="logo">
+        <!--img tag with fake 'logo' could go here in the future-->
+			</div>
+			<div id="caption">
+				<h1>Book Club</h1>
+			</div>
+		</div>
+		<div class="infoBarElement" style="text-align: center;">
+			<h1>Main Book Queue</h1>
+		</div>
+		<div class="infoBarElement" style="text-align: right;">
+			<h1 id="userName"></h1>
+		</div>
+	</div>
+
+
+	<div id="leftPanel" class="mainPanel">
+		<div class="leftPanelStuff">
+			<ul style="text-align: left;">
+        <div class="leftPanelStuff_topBox">
+          <!--Could havd "Time left for voting" show up here as well -->
+          <h6>Time Remaining</h6>
+          <p>12:00 hrs</p>
+        </div>
+				<p><a id="suggestBook">Suggest Book</a></p>
+				<p><a href="myUserInfo.html">View my Profile</a></p>
+        <p><a id="seeOthers" href="otherUserInfo.html">See other users</a></p>
+			</ul>
+		</div>
+	</div>
+	<div id="centerPanel" class="mainPanel centerPanel">
+		<div id="viewerCanvas" style="width: 800px; height: 650px"></div>
+		<!--<div class="bookInfoHolder">
+			<div class="bookInfoHolder_leftPane">
+			</div>
+			<div class="bookInfoHolder_rightPane">
+			</div>
+		</div>-->
+	</div>
+	<div class="popUpHolder centerPanel" style="display: none">
+		<input type="search" placeholder="Search Books" id="searchbar">
+		<div class="exitButton">X</div>
+		<ul id="bookList" class="CenterPanelList">
+		</ul>
+	</div>
+</body>
+</html>

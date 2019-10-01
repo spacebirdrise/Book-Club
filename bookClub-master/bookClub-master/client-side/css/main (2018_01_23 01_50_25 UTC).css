@@ -1,0 +1,23 @@
+.bookInfoHolder{
+  width:100%;
+  height:500px;
+}
+
+#centerPanel{
+  text-align:center;
+}
+
+#viewerCanvas{
+  display:inline-block;
+}
+
+.exitButton{
+  text-align:right;
+  display:inline-block;
+  margin-left:50vw;
+}
+
+.exitButton:hover{
+  color:grey;
+  cursor:pointer;
+}
